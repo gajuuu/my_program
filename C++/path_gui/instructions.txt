@@ -1,0 +1,63 @@
+* It was written that the minimum number of moves was 31, but after doing it myself, it seems the minimum number is 30.
+  So I implemented this program in such a way.
+
+The game board is a 4x5 board.
+In addition, the game screen has the "Reset Game" button, game timer, "Pause Timer" button, "Demo" button, message box, the counter of the number of moves, and spin box for setting the target number of moves, color controller for the pieced of top and bottom rows.
+Any and all messages are displayed in the message box.
+
+[General functions: how to play]
+Initially, the buttons in the top row are set to green and those in the bottom row to red. These are the pieces to move. White buttons indicate empty slots. 
+
+You can play this game in the following way.
+	1. Click on the piece you wish to move. The selected piece turns yellow.
+	2. Click on the slot to which you want to move the piece, and the piece will move to that position if the piece can move there.
+	3. If the piece cannot move there, a warning message will be displayed.
+	   The selection status is not released at this point, so a new destination will be selected again.
+	4. To release the selection, click again on the selected piece (yellow button). This will make it possible to select a new piece to move.
+
+You cannot click on an empty slot unless the piece you want to move is selected.
+When the first piece is clicked, the game starts, and the game timer starts counting.
+During the game, the color controller and the spin box for setting target moves are disabled.
+Also, the game timer starts when the first piece is selected.
+By clicking "Reset Game" button, You can reset the game at any time except during the demonstration.
+Any and all messages are displayed in the message box.
+
+The following are additional features.
+	a. You can change the colors of the pieces.
+	b. You can pause the game timer.
+	c. You can set a target number of moves.
+	d. You can see the demonstration.
+	e. The background color will change automatically in a specific condition.
+
+
+[Additional functions]
+a. Change the colors of the pieces
+	You can use the slider or spin box to adjust the RGB and change the color of the pieces.
+	By selecting a color and pressing the "Top Buttons" button, you can change the buttons of the top row.
+	Similarly, you can change the buttons of the bottom row with the "Bottom Buttons".
+	However, the following colors cannot be selected, in which case the respective message will appear.
+		- White and yellow which are used to indicate available slots and selection status, respectively.
+		  Therefore, to avoid confusion, the exact same colors as these cannot be selected.
+		- Top and bottom pieces cannot be the exact same color.
+
+b. Pause the game timer
+	By pressing the "Pause Timer" button, you can pause the game timer while you are playing.
+	The timer can be resumed simply by restarting the game by clicking on the piece or the slot  (It depends on the status when the timer is paused).
+
+c. See the demonstration
+	When you click the "Demo" button, the game state is reset, and the automatic demonstration starts
+	You can see one of the patterns of how to clear the game with a minimum number of moves (= 30).
+	This can be done at any time during the game except during the demonstration itself.
+	Any operations cannot be selected during the demonstration. The timer will not run, too.
+	When the demonstration ends, a given message is displayed, and the "Reset Game" and "Demo" buttons are enabled.
+
+d. Set a target number of moves
+	You can set your target number of moves in the spin box.
+	The minimum number is 30 and the maximum is 100.
+	If you try to start a game with a number outside the set range entered by direct input, the number entered immediately before will be set as the target number.
+	If you clear the game with equal to or fewer moves than the target number, a congratulatory message will be displayed.
+	Conversely, if you clear the game with larger moves than the target number, a failure message will be displayed.
+
+e. The color change of the background
+	If the game is completed in the minimum number of moves (= 30), the background color will temporarily change to pink. 
+	By pressing "Reset Game" or the "Demo" button, it will be restored.
