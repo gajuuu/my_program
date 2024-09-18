@@ -15,10 +15,8 @@ such as Python, C++, Java, Haskell, Signal Processing, Data Structures and Algor
 - [Machine Learning](./ML): Implementations of basic machine learning algorithms.
 
 ## Purpose
-
-This repository is intended for students learning programming or professionals seeking sample code for reference. 
-It provides a wide range of examples across different programming languages and computational topics.
+These tasks were designed to solidify understanding of key programming concepts and techniques. 
+They serve as practical examples of my ability to solve problems and implement solutions across various domains.
 
 ## Usage
-
 Each sub-repository contains a separate README file with setup and execution instructions. Navigate to the respective directory to find more details.
