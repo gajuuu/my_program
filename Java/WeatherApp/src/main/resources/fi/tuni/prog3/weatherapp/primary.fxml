@@ -1,0 +1,57 @@
+cd ../..<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="778.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.prog3.weatherapp.WeatherAppController" >
+
+    <top>
+        <Button onAction="#handleSearch" text="Search">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+    </top>
+    
+    <center>
+        <VBox spacing="10">
+            <children>
+                <Text fx:id="CityName" layoutX="52.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="360.0" wrappingWidth="252.33331298828125">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+       
+                <HBox alignment="BASELINE_CENTER" prefHeight="330" prefWidth="1167.0" style="-fx-background-color: #8fc6fd;">
+                    <children>
+                        <Text layoutX="120.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Weather" translateX="160.0">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="weatherText" layoutX="52.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" translateY="50.0" wrappingWidth="252.33331298828125">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+                <HBox prefHeight="330" style="-fx-background-color: #b1c2d4;">
+                    <children>
+                        <Label text="Bottom Panel" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+
+    <bottom>
+        <Button onAction="#handleQuit" text="Quit" />
+    </bottom>
+
+</BorderPane>

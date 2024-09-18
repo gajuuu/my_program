@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="fi.tuni.prog3.weatherapp.HourlyForecastController"
+      prefHeight="200.0" prefWidth="30.0" alignment="CENTER" 
+      style="-fx-padding: 5px;">
+    <children>
+        <Label fx:id="timeLabel"> 
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="weatherImage" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" /> 
+        <Label fx:id="tempLabel" style="-fx-font-size: 14.0;" />
+        <StackPane fx:id="rotateStackPane" alignment="CENTER">
+            <ImageView fx:id="windImage" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" /> 
+        </StackPane>
+        <Label fx:id="windLabel" style="-fx-font-size: 14.0;" />
+        <Label fx:id="rainLabel" style="-fx-font-size: 14.0;" />
+        <Label fx:id="humidityLabel" style="-fx-font-size: 14.0;" />
+    </children>
+</VBox>
